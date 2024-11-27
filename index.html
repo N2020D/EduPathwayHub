@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EduPathwayHub</title>
+    <!--Add icon to the tab-->
+    <link rel="icon" type="image/png" href="home_img/logo.png">
+    <!--Add Google fonts to the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" a href="styles.css">
 </head>
+
 <body>
-    
+    <!--HEADER Section -Contains logo,website name,navigation bar,login button,register button-->
+    <header>
+        <!--Logo for the website-->
+        <div class="head_section">
+            <div class="logo">
+                <img src="home_img/logo.png" alt="logo for the website">
+                <h1><span class="t1">E</span>du<span class="t2">P</span>athway<span class="t3">H</span>ub</h1>
+            </div>
+            <!--Navigation bar-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Universities</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Institutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pro Insigts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Call to action buttons - Login and Register buttons -->
+            <div class="buttons">
+                <a href="#" class="login_btn">Login</a>
+                <a href="#" class="reg_btn">Regiser</a>
+            </div>
+        </div>
+    </header> <!--END the header section-->
+    <!--START HERO section-->
+    <section class="hero">
+        <h2>Explore Your Path to Succes</h2>
+        <p>Empowering you to make informed higher education choices.Discover top universities,degree prohrams and
+            scholarship opportunities.</p>
+        <p id="para1">All your higher education resources in one place.</p>
+        <a href="#" class="explore-btn">Explore Now</a>
+    </section>
+    <!--Main search bar-->
+    <section class="search_bar">
+        <input type="text" placeholder="Search for Universities,Degree programs, scholarships...">
+        <button>Search</button>
+    </section>
+    <!--END the search bar-->
+    <!--MAIN BODY CONTENT 1st SECTION-->
+    <section class="body_cont1">
+        <div class="text_cont">
+            <h3>About Us</h3>
+            <p>Every year, we change the lives of thousands of students.Our platform, EduPathwayHub, is dedicated to
+                empowering higher education students by providing a comprehensive guide to their academic and
+                professional futures. We bring together universities, courses, institutions, and expert insights in one
+                accessible place to help students make informed decisions about their higher education paths.</p>
+            <p>Features of EduPathwayHub.</p>
+            <ul>
+                <li>Global Universities</li>
+                <li>Local Universities</li>
+                <li>Institutions</li>
+                <li>Online Courses and Training</li>
+                <li>Scholarship and Financial Aid</li>
+                <li>Study resources</li>
+                <li>Expert Insights</li>
+            </ul><br>
+            <a href="#" class="learn_btn">Learn more</a>
+        </div>
+        <div class="video_cont">
+            <video width="440" height="360" autoplay muted loop>
+                <source src="./home_video/intro.mp4" type="video/mp4">
+            </video>
+            <video width="440" height="360" autoplay muted loop>
+                <source src="./home_video/intro2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!--END-->
+    <!--MAIN BODY CONTENT 2st SECTION-->
+    <section class="body_cont2">
+        <div class="txt">
+            <h3>Explore Educational Paths.</h3>
+        </div>
+        <div class="box_cont">
+            <div class="cont1">
+                <a href="#"><img src=" "></a>
+                <h4>Local Universities</h4>
+                <p>Explore the top universities in Sri Lanka offering a variety of programs tailored to your interests. From Engineering to Arts, discover your path to success at prestigious institutions.</p>
+            </div>
+            <div class="cont1">
+                <a href="#"><img src=" "></a>
+                <h4>Popular Courses</h4>
+                <p>Stay ahead with trending courses in Software Engineering, Digital Marketing, Data Science, and more. Find the perfect program to boost your career prospects.</p>
+            </div>
+            <div class="cont1">
+                <a href="#"><img src=" "></a>
+                <h4>Foreign Universities</h4>
+                <p>Dream big with opportunities at world-renowned universities. Discover study options across the USA, Australia, Canada, and beyond to elevate your global education.</p>
+            </div>
+            <div class="cont1">
+                <a href="#"><img src=" "></a>
+                <h4>Expert Insights</h4>
+                <p>Gain valuable advice from industry leaders and educational experts. From study tips to career guidance, get the insights you need to make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+
 </body>
+
 </html>
