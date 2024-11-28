@@ -1,180 +1,344 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
 
-body{
+body {
     margin: 0;
     padding: 1rem;
-    background-color: blue;  
+    background-color: rgb(0, 0, 54);
     font-family: 'Roboto', sans-serif;
 }
+
 /*HEADER SECTION STYLE start*/
 /*header section basic layout*/
-header{
+header {
     margin: auto;
     padding: 0.5rem;
-    background-color: white;
+    /*background-color: white;*/
 }
-.head_section{
+
+.head_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 /*end*/
 /*logo and website name*/
-header .head_section .logo{
+header .head_section .logo {
     gap: 1rem;
     display: flex;
     align-items: center;
 }
-header .head_section .logo img{
+header .head_section h1{
+    color: white;
+    font-size: 2.5rem;
+}
+header .head_section .logo img {
     width: 6.5rem;
-    height: 6.5rem; 
+    height: 6.5rem;
 }
-header .head_section .logo .t1{
-    color: rgb(1, 105, 23);
+
+header .head_section .logo .t1 {
+    color: cyan;
+    font-weight: bolder;
 }
-header .head_section .logo .t2{
-    color: rgb(0, 150, 12);
+
+header .head_section .logo .t2 {
+    color: cyan;
 }
-header .head_section .logo .t3{
-    color: rgb(35, 196, 2);
+
+header .head_section .logo .t3 {
+    color: cyan;
 }
+
 /*end*/
 /*navigation bar*/
-header .head_section nav ul{
+header .head_section nav ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
 }
-header .head_section nav ul li a{
+
+header .head_section nav ul li a {
     text-decoration: none;
-    color: rgb(4, 4, 236);
+    color: white;
 }
+header .head_section nav ul li a:hover{
+    color: orangered;
+}
+
 /*end*/
 /*button style*/
-header .head_section .buttons a{
-    border-radius: 3.4rem; 
+header .head_section .buttons a {
+    
     padding: .7rem;
     text-decoration: none;
+    font-weight: bold;
 }
-header .head_section .buttons .login_btn{
-    background-color: rgb(0, 0, 116);
+
+header .head_section .buttons .login_btn {
+    background-color: rgb(0, 0, 161);
     color: white;
 }
-header .head_section .buttons .reg_btn{
-    background-color: rgb(138, 0, 0);
+
+header .head_section .buttons .reg_btn {
+    background-color: rgb(158, 0, 0);
     color: white;
 }
-header .head_section .buttons .reg_btn:hover{
+
+/*header .head_section .buttons .reg_btn:hover {
     background-color: rgb(255, 84, 62);
     color: black;
 }
-header .head_section .buttons .login_btn:hover{
+
+header .head_section .buttons .login_btn:hover {
     background-color: rgb(82, 80, 197);
     color: black;
-}
+}*/
+
 /*end*/
 /*END HEADER SECTION*/
 
 /*HERO SECTION - Cover image and sub headings*/
-.hero{
-    padding: 10rem 3rem;
+.hero {
+    padding: 8rem 1rem;
     background: url("home_img/hero_img.png") no-repeat center center/cover;
 }
-.hero{
+
+.hero {
     text-align: center;
 }
-.hero h2{
+
+.hero h2 {
     font-size: 2.5rem;
     color: white;
     font-weight: bolder;
 }
-.hero p{
+
+.hero p {
     color: white;
     font-size: 1.7rem;
 }
+
 /*hero section button*/
-.hero #para1{
+.hero #para1 {
     font-style: italic;
     color: white;
     font-size: 1.4rem;
 }
-.hero .explore-btn{
+
+.hero .explore-btn {
     background-color: rgb(116, 5, 5);
     text-decoration: none;
     padding: 0.625rem 1.25rem;
-    color: white; 
+    color: white;
 }
-.hero .explore-btn:hover{
+
+.hero .explore-btn:hover {
     background-color: rgb(204, 59, 2);
     color: black;
 }
+
 /*end*/
 /*END*/
 /*MAIN SEARCH BAR*/
-.search_bar{
+.search_bar {
     text-align: center;
     padding: 1rem;
 }
-.search_bar input[type="text"]{
+
+.search_bar input[type="text"] {
     padding: .8rem;
     font-size: 0.8rem;
     width: 50%;
 }
-.search_bar button{
+
+.search_bar button {
     padding: .7rem 0.9rem;
     font-size: 1rem;
-    background-color: rgb(0, 0, 0);
-    color: white;
     cursor: pointer;
+    background-color: rgb(24, 23, 23);
+    color: white;
 }
-.search_bar button:hover{
-    background-color: rgb(53, 50, 50);
+
+.search_bar button:hover {
+    background-color: rgb(87, 86, 86);
+    color: black;
 }
+
 /*end*/
 /*END*/
-/*BODY CONTENT SECTION 1*/
-.body_cont1{
+/*BODY CONTENT SECTION 1-about us,video container*/
+.body_cont1 {
     display: flex;
     padding: 1.5rem 2rem;
     background-color: white;
-    gap: 5rem; 
+    gap: 5rem;
     line-height: 2rem;
 }
-.body_cont1 .text_cont h3{
+
+.body_cont1 .text_cont h3 {
     font-size: 2rem;
 }
-.body_cont1 .text_cont .learn_btn{
-    border-radius: 3.4rem; 
+
+.body_cont1 .text_cont .learn_btn {
+    border-radius: 3.4rem;
     padding: .7rem;
     text-decoration: none;
-    background-color: blue;
+    background-color: rgb(0, 0, 121);
     color: white;
+    margin-left: 2.5rem;
 }
-.body_cont1 .video_cont{
+
+.body_cont1 .video_cont {
     padding: 4rem 3rem;
 }
-.body_cont1 .video_cont video{
+
+.body_cont1 .video_cont video {
     height: auto;
 }
+
 /*END*/
-/*MAIN BODY CONTENT 2st SECTION*/
-.body_cont2{
+/*MAIN BODY CONTENT 2nd SECTION-explore educational paths with gid layout*/
+.body_cont2 {
     background-color: white;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
+    display: inline-block;
 }
-.body_cont2 .txt{
+
+.body_cont2 h3 {
     text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
 }
 
+.body_cont2 .box_cont {
+    display: flex;
+    gap: 2rem;
+}
 
+.body_cont2 .box_cont .cont1 {
+    text-align: center;
+    padding: 1rem;
+    display: flexbox;
+    background-color: rgb(230, 226, 226);
+    line-height: 1.5rem;
+}
 
+.body_cont2 .box_cont .cont1 h4 {
+    font-size: 1.2rem;
+}
 
+.body_cont2 .box_cont .cont1 .learn_btn2 {
+    border-radius: 3.4rem;
+    padding: .5rem;
+    text-decoration: none;
+    background-color: rgb(1, 1, 70);
+    color: white;
+    font-size: 0.8rem;
+    
+   
+}
 
+/*END*/
+/*START Body content 3rd section*/
+.body_cont3 {
+    background-color: rgb(230, 226, 226);
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+}
 
+.body_cont3 h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
 
+.body_cont3 .image_cont {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: auto;
+}
 
+.body_cont3 .image_cont img {
+    width: 10rem;
+    height: auto;
+    margin: 0 2rem;
+}
 
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
 
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
+/*END*/
+/*Sart memory style*/
+.memory {
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    background-color: white;
+}
 
+.memory h3 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
 
+.memory .memory_cont {
+    display: flex;
+    gap: 2rem;
+}
+
+.memory .memory_cont .cont1 {
+    text-align: center;
+    padding: 1rem;
+    display: flexbox;
+    background-color: rgb(230, 226, 226);
+    line-height: 1.5rem;
+}
+
+.memory .memory_cont .cont1 .txt3 {
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/*END*/
+/*footer*/
+footer .main_cont {
+    margin-top: 5rem;
+    color: whitesmoke;
+    display: inline-block;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    padding: 3rem 2rem;
+}
+footer .main_cont .main_col .txt8 {
+    font-size: 0.9rem;
+}
+footer .main_cont .main_col h3{
+    color: darkturquoise;
+}
+footer .main_cont .main_col ul  {
+    list-style-type: none;
+    text-decoration: none;
+}
+footer .main_cont .main_col ul li{
+    text-indent: -1rem;
+}
+footer .main_cont .main_col ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer .main_cont .main_col ul li a:hover{
+    color: orange;
+}
