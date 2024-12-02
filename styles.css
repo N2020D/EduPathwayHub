@@ -72,12 +72,12 @@ header .head_section nav ul li a {
     color: orangered;
 }*/
 /*DROPDOWN START*/
-li a:hover, .dropdown:hover .dropbtn{
+header .head_section nav ul li a:hover .dropdown:hover .dropbtn{
     background-color: black;
     padding: 0.5rem 0.5rem;
     
 }
-li.dropdown {
+header .head_section nav ul li.dropdown {
     display: inline-block;
   }
  

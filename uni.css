@@ -23,7 +23,8 @@
 .img-show{
     padding: 2rem 3rem;
     background-color: white;
-    overflow: hidden;
+    overflow-x: scroll ;
+    scroll-behavior: smooth;
     position: relative;
 }
 .img-show .img-topic{

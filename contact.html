@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,95 +14,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Google social icons- school icon,email,contact,location-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" a href="styles.css">
-    <link rel="stylesheet" a href="contact.css">
 
-    <style>
-        /*HERO section*/
-        .main-hero {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
+    <link rel="stylesheet" a href="styles.css">
+    <link rel="stylesheet" a href="cont.css">
 
-        img {
-            height: 35rem;
-            opacity: 0.7;
-        }
 
-        /* Caption text */
-        .text {
-            color: black;
-            font-size: 6rem;
-            font-weight: bolder;
-            padding: 2rem 2rem;
-            position: absolute;
-            top: 5rem;
-            width: 100%;
-            text-align: center;
-            text-shadow: 4px 3px 6px rgb(122, 0, 133);
-        }
-
-        .txt1 {
-            color: rgb(253, 3, 3);
-            font-size: 4rem;
-            padding: 2rem 2rem;
-            position: absolute;
-            margin-bottom: 0.5rem;
-            width: 100%;
-            text-align: center;
-            text-align: center;
-            text-shadow: 4px 3px 6px rgb(250, 3, 3);
-        }
-
-        /* Number text */
-        .num-txt {
-            color: #0a0000;
-            font-size: 1.5rem;
-            padding: 1rem 1rem;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots indicators */
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active {
-            background-color: #464444;
-        }
-
-        /* Fading animation */
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        /*@keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }*/
-
-        /*END*/
-    </style>
 </head>
 
 <body>
+
+    <!--HEADER Section -Contains logo,website name,navigation bar,login button,register button-->
+    <header>
+        <!--Logo for the website-->
+        <div class="head_section">
+            <div class="logo">
+                <img src="home_img/logo.png" alt="logo for the website">
+                <h1><span class="t1">E</span>du<span class="t2">P</span>athway<span class="t3">H</span>ub</h1>
+            </div>
+            <!--Navigation bar-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!--University tab dropdown-->
+                    <li class="dropdown"><a href="uni.html" class="dropbtn">Universities</a>
+                        <div class="dropdown-content">
+                            <a href="#">Government Universities</a>
+                            <a href="#">Foreign Universities</a>
+                            <a href="#">External Degree Programs</a>
+                            <a href="#">Scholarships</a>
+                        </div>
+                    </li><!--end-->
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Institutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pro Insigts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Call to action buttons - Login and Register buttons -->
+            <div class="buttons">
+                <a href="login.html" target="_top" class="login_btn">Login</a>
+                <a href="#" target="_parent" class="reg_btn">Regiser</a>
+            </div>
+        </div>
+    </header> <!--END the header section-->
+
+
+
+
     <!--Image shower loop-->
-    <div class="main-hero">
+    <section class="main-hero">
         <div class="hero2">
             <div class="imgShow">
                 <div class="num-txt">1/8</div>
@@ -161,7 +123,7 @@
             </div>
         </div>
         <br>
-        <!--Active slide finder -dot -->
+        <!--Active slide finder -dot-->
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -172,7 +134,7 @@
             <span class="dot"></span>
 
         </div>
-    </div>
+    </section>
     <!--Javascript for image slide show behaviour control-->
     <script>
         let slideIndex = 0;
@@ -198,25 +160,99 @@
 
     <!--Founder details-->
     <section class="founder">
-        <div class="founder-cont">
-            <h2>Founder</h2>
-            <img src="home_img/profile1.png" alt="founder image" width="5rem" height="5rem">
-            <p>EDUPathwayHub was founded by W.B.M.Niluka Dasuni, who is a strong advocate for higher education,
-                especially for rural students. With a strong background in Information Technology, she aspires to
-                provide a platform that bridges the gap between students and a wide range of educational opportunities
-                available locally and globally, to students pursuing higher education.</p>
-        </div>
-        <div class="founder-cont">
-            <h2>Founder’s personal journey</h2>
-            <p>W.B.M.Niluka dasuni, Higher Education in Information Technology at SLIATE identified the difficulties
-                students face in navigating the world of higher education. Her journey from identifying the right
-                institutions to accessing reliable resources was marked by perseverance and determination that laid the
-                foundation for EduPathwayHub.</p>
+        <div class="block">
+            <div class="founder-cont">
+                <h2>Founder</h2>
+                <img src="home_img/profile1.png" alt="founder image" width="5rem" height="5rem">
+                <p>EDUPathwayHub was founded by W.B.M.Niluka Dasuni, who is a strong advocate for higher education,
+                    especially for rural students. With a strong background in Information Technology, she aspires to
+                    provide a platform that bridges the gap between students and a wide range of educational
+                    opportunities
+                    available locally and globally, to students pursuing higher education.</p>
+
+                    
+                    <p id="tx2"><b>Signature <br>01/12/2024 Niluka<br> Founder<br> EduPathwayHub</b></p>
+            </div>
+            <div class="founder-cont">
+                <h2>Founder’s personal journey</h2>
+                <p>W.B.M.Niluka dasuni, Higher Education in Information Technology at SLIATE identified the difficulties
+                    students face in navigating the world of higher education. Her journey from identifying the right
+                    institutions to accessing reliable resources was marked by perseverance and determination that laid
+                    the
+                    foundation for EduPathwayHub.</p>
+            </div>
         </div>
     </section>
 
 
 
+    <!--FOOTER SECTION-->
+    <footer>
+        <div class="logo">
+            <img src="home_img/logo.png" alt="logo for the website">
+            <h1><span class="t1">E</span>du<span class="t2">P</span>athway<span class="t3">H</span>ub</h1>
+            <i class="fa fa-graduation-cap" style="font-size:36px;color: white;"></i>
+        </div>
+        <hr>
+
+        <div class="main_cont">
+            <div class="main_col">
+                <h3>About</h3>
+                <p class="txt8">EduPathWayHub is your ultimate guide to higher education opportunities in Sri Lanka and
+                    beyond. We
+                    connect students with the right resources to shape their future.</p>
+                <hr>
+                <h3>Contact</h3>
+                <i class="material-icons" style="font-size:18px;">call</i>
+                <p style="font-size: 0.7rem;">074-2272974</p>
+                <i class="material-icons" style="font-size:18px;">location_on</i>
+                <p style="font-size: 0.7rem;">Colombo,Sri Lanka.</p>
+                <i class="material-icons" style="font-size:18px;">mail</i>
+                <p style="font-size: 0.7rem;">dasuniniluka50@gmail.com</p>
+            </div>
+            <div class="main_col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Universities</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Institutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pro Insigts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="main_col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Guidance</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="main_col">
+                <h3>Newsletter</h3>
+                <p class="txt8">Subscribe to our newsletter for the latest updates on higher education and career
+                    opportunities.</p>
+                <input type="text" id="e-mail" name="e-mail">
+                <button>Email</button>
+                <hr>
+                <h3>Social Media </h3>
+                <i class="fa fa-linkedin-square" style="font-size:58px;"></i>
+                <i class='fa fa-facebook-square' style='font-size:58px'></i>
+                <i class='fa fa-github-square' style='font-size:58px'></i>
+                <i class='fa fa-reddit-square' style='font-size:58px'></i>
+            </div>
+        </div>
+        <hr>
+        <div class="last-cont">
+            <p>&copy; &nbsp;2024 &nbsp;&nbsp;EduPathwayHub.&nbsp;All rights reserved.</p><br>
+            <a href="#">Privacy & Cookies</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Terms of Use</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Disclaimer</a>
+        </div>
+    </footer>
 
 </body>
 
