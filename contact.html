@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPathwayHub</title>
+    <!--Add icon to the tab-->
+    <link rel="icon" type="image/png" href="home_img/logo.png">
+    <!--Add Google fonts to the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome 4 Brand icons -linkedin,redit,facebook,git icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google social icons- school icon,email,contact,location-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" a href="styles.css">
+    <link rel="stylesheet" a href="contact.css">
+
+    <style>
+        /*HERO section*/
+        .main-hero {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        img {
+            height: 35rem;
+            opacity: 0.7;
+        }
+
+        /* Caption text */
+        .text {
+            color: black;
+            font-size: 6rem;
+            font-weight: bolder;
+            padding: 2rem 2rem;
+            position: absolute;
+            top: 5rem;
+            width: 100%;
+            text-align: center;
+            text-shadow: 4px 3px 6px rgb(122, 0, 133);
+        }
+
+        .txt1 {
+            color: rgb(253, 3, 3);
+            font-size: 4rem;
+            padding: 2rem 2rem;
+            position: absolute;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            text-align: center;
+            text-align: center;
+            text-shadow: 4px 3px 6px rgb(250, 3, 3);
+        }
+
+        /* Number text */
+        .num-txt {
+            color: #0a0000;
+            font-size: 1.5rem;
+            padding: 1rem 1rem;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #464444;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        /*@keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }*/
+
+        /*END*/
+    </style>
+</head>
+
+<body>
+    <!--Image shower loop-->
+    <div class="main-hero">
+        <div class="hero2">
+            <div class="imgShow">
+                <div class="num-txt">1/8</div>
+                <img src="contact_img/uni.jpg" alt="University image" width="100%">
+                <div class="text">Select your preferred path<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">2/8</div>
+                <img src="contact_img/book.jpg" alt="University image" width="100%">
+                <div class="text">Search our available resources<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">3/8</div>
+                <img src="contact_img/success.jpg" alt="University image" width="100%">
+                <div class="text">Success your dreams with us<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">4/8</div>
+                <img src="contact_img/question.jpg" alt="University image" width="100%">
+                <div class="text">Gain our experts panel ideas<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">5/8</div>
+                <img src="contact_img/book2.jpg" alt="University image" width="100%">
+                <div class="text">Always stay connect with us<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">6/8</div>
+                <img src="contact_img/find.png" alt="University image" width="100%">
+                <div class="text">Find new future trends your preference<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+            <div class="imgShow">
+                <div class="num-txt">7/8</div>
+                <img src="contact_img/conco11.jpg" alt="University image" width="100%">
+                <div class="text">Fulfill your career success<br>
+                    <p class="txt1">EduPathwayHub</p>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!--Active slide finder -dot -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+    </div>
+    <!--Javascript for image slide show behaviour control-->
+    <script>
+        let slideIndex = 0;
+        imgShow();
+
+        function imgShow() {
+            let i;
+            let slides = document.getElementsByClassName("imgShow");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(imgShow, 2000); //change time
+        }
+    </script>
+
+    <!--Founder details-->
+    <section class="founder">
+        <div class="founder-cont">
+            <h2>Founder</h2>
+            <img src="home_img/profile1.png" alt="founder image" width="5rem" height="5rem">
+            <p>EDUPathwayHub was founded by W.B.M.Niluka Dasuni, who is a strong advocate for higher education,
+                especially for rural students. With a strong background in Information Technology, she aspires to
+                provide a platform that bridges the gap between students and a wide range of educational opportunities
+                available locally and globally, to students pursuing higher education.</p>
+        </div>
+        <div class="founder-cont">
+            <h2>Founder’s personal journey</h2>
+            <p>W.B.M.Niluka dasuni, Higher Education in Information Technology at SLIATE identified the difficulties
+                students face in navigating the world of higher education. Her journey from identifying the right
+                institutions to accessing reliable resources was marked by perseverance and determination that laid the
+                foundation for EduPathwayHub.</p>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>

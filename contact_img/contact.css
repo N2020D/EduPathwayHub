@@ -1,0 +1,10 @@
+/*Founder section*/
+.founder{
+    padding: 2rem;
+    display: flex;
+}
+.founder .founder-cont{
+    padding: 2rem 2rem;
+    gap: 50%;
+    display: flex;
+}

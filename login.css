@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: radial-gradient(circle ,rgb(3, 180, 127) ,black);
+    background-image: radial-gradient(circle ,rgb(3, 180, 127) ,black);
+}
+h2{
+    font-size: 3rem;
+}
+form{
+    background-color: beige;
+    padding: 3rem;
+    width: 20rem;
+    height: 30rem;
+}
+

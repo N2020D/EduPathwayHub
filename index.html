@@ -9,7 +9,14 @@
     <link rel="icon" type="image/png" href="home_img/logo.png">
     <!--Add Google fonts to the website -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome 4 Brand icons -linkedin,redit,facebook,git icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google social icons- school icon,email,contact,location-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" a href="styles.css">
+   
+
 </head>
 
 <body>
@@ -24,8 +31,16 @@
             <!--Navigation bar-->
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Universities</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <!--University tab dropdown-->
+                    <li class="dropdown"><a href="uni.html" class="dropbtn">Universities</a>
+                        <div class="dropdown-content">
+                            <a href="#">Government Universities</a>
+                            <a href="#">Foreign Universities</a>
+                            <a href="#">External Degree Programs</a>
+                            <a href="#">Scholarships</a>
+                        </div>
+                    </li><!--end-->
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Institutions</a></li>
                     <li><a href="#">Resources</a></li>
@@ -35,8 +50,8 @@
             </nav>
             <!--Call to action buttons - Login and Register buttons -->
             <div class="buttons">
-                <a href="#" class="login_btn">Login</a>
-                <a href="#" class="reg_btn">Regiser</a>
+                <a href="login.html" target="_top" class="login_btn">Login</a>
+                <a href="#" target="_parent" class="reg_btn">Regiser</a>
             </div>
         </div>
     </header> <!--END the header section-->
@@ -84,9 +99,28 @@
         </div>
     </section>
     <!--END-->
+    <!--START statement section-->
+    <section class="statement">
+        <div class="cont">
+            <div class="item">
+                <h2>Our Vission</h2>
+                <p>To be the leading digital hub that bridges educational gaps, fosters equal opportunities, and
+                    transforms the higher education journey for students across Sri Lanka, ensuring a brighter future
+                    for all through knowledge, guidance, and innovation.</p>
+            </div>
+            <div class="item">
+                <h2>Our Mission</h2>
+                <p>To empower students, especially those from rural areas, by providing a comprehensive, accessible, and
+                    user-friendly platform that unites global and local educational opportunities,institutes, resources,
+                    and expert insights in one place, enabling them to confidently pursue their higher education and
+                    career aspirations.</p>
+            </div>
+        </div>
+    </section>
+    <!--END-->
     <!--MAIN BODY CONTENT 2nd SECTION-->
     <section class="body_cont2">
-        <h3>Explore Educational Paths.</h3>
+        <h3>Explore Educational Paths</h3>
         <div class="box_cont">
             <div class="cont1">
                 <h4>Local Universities</h4>
@@ -115,6 +149,26 @@
                 <p>Gain valuable advice from industry leaders and educational experts. From study tips to career
                     guidance, get the insights you need to make informed decisions.</p>
                 <a href="#" class="learn_btn2">Learn more</a>
+            </div>
+        </div>
+    </section>
+    <!--START member part-->
+    <section class="members">
+        <div class="cont-member">
+            <div class="content">
+                <i class="material-icons" style="font-size:48px;color:red">person</i>
+                <h3>1000+</h3>
+                <p>unique visitors every year</p>
+            </div>
+            <div class="content">
+                <i class="material-icons" style="font-size:48px;color:red">equalizer</i>
+                <h3>100+</h3>
+                <p>programmes listed</p>
+            </div>
+            <div class="content">
+                <i class="material-icons" style="font-size:48px;color:red">business</i>
+                <h3>50+</h3>
+                <p>featured institutions</p>
             </div>
         </div>
     </section>
@@ -174,8 +228,17 @@
         </div>
     </section>
     <!--END-->
+
+
     <!--FOOTER SECTION-->
     <footer>
+        <div class="logo">
+            <img src="home_img/logo.png" alt="logo for the website">
+            <h1><span class="t1">E</span>du<span class="t2">P</span>athway<span class="t3">H</span>ub</h1>
+            <i class="fa fa-graduation-cap" style="font-size:36px;color: white;"></i>
+        </div>
+        <hr>
+
         <div class="main_cont">
             <div class="main_col">
                 <h3>About</h3>
@@ -184,6 +247,12 @@
                     connect students with the right resources to shape their future.</p>
                 <hr>
                 <h3>Contact</h3>
+                <i class="material-icons" style="font-size:18px;">call</i>
+                <p style="font-size: 0.7rem;">074-2272974</p>
+                <i class="material-icons" style="font-size:18px;">location_on</i>
+                <p style="font-size: 0.7rem;">Colombo,Sri Lanka.</p>
+                <i class="material-icons" style="font-size:18px;">mail</i>
+                <p style="font-size: 0.7rem;">dasuniniluka50@gmail.com</p>
             </div>
             <div class="main_col">
                 <h3>Quick Links</h3>
@@ -208,10 +277,24 @@
             </div>
             <div class="main_col">
                 <h3>Newsletter</h3>
-                <p class="txt8">Subscribe to our newsletter for the latest updates on higher education and career opportunities.</p>
+                <p class="txt8">Subscribe to our newsletter for the latest updates on higher education and career
+                    opportunities.</p>
+                <input type="text" id="e-mail" name="e-mail">
+                <button>Email</button>
                 <hr>
                 <h3>Social Media </h3>
+                <i class="fa fa-linkedin-square" style="font-size:58px;"></i>
+                <i class='fa fa-facebook-square' style='font-size:58px'></i>
+                <i class='fa fa-github-square' style='font-size:58px'></i>
+                <i class='fa fa-reddit-square' style='font-size:58px'></i>
             </div>
+        </div>
+        <hr>
+        <div class="last-cont">
+            <p>&copy; &nbsp;2024 &nbsp;&nbsp;EduPathwayHub.&nbsp;All rights reserved.</p><br>
+            <a href="#">Privacy & Cookies</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Terms of Use</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Disclaimer</a>
         </div>
     </footer>
 </body>
