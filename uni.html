@@ -14,8 +14,8 @@
     <!--Google social icons- school icon,email,contact,location-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" a href="styles.css"><!--home page-->
-    <link rel="stylesheet" a href="uni.css"><!--University page-->
+    <link rel="stylesheet" a href="styles.css">
+    <link rel="stylesheet" a href="uni.css">
 
 </head>
 
@@ -32,12 +32,22 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="uni.html">Universities</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Institutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Pro Insigts</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!--University tab dropdown-->
+                    <li class="dropdown">
+                        <a href="uni.html" class="dropbtn">Universities</a>
+                        <div class="dropdown-content">
+                            <a href="#">Government Universities</a>
+                            <a href="#">Foreign Universities</a>
+                            <a href="#">External Degree Programs</a>
+                            <a href="#">Scholarships</a>
+                            <a href="#">Institutes</a>
+                        </div>
+                    </li><!--end-->
+                    <li><a href="course.html">Courses</a></li>
+                    <!--<li><a href="institute.html">Institutions</a></li>-->
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="pro.html">Pro Insigts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <!--Call to action buttons - Login and Register buttons -->
@@ -46,6 +56,7 @@
                 <a href="#" target="_parent" class="reg_btn">Regiser</a>
             </div>
         </div>
+
     </header> <!--END the header section-->
     <!--START hero section -->
     <div class="banner">
@@ -54,9 +65,46 @@
     </div>
     <!--END-->
 
+    <!--INTRO to university-->
+    <section class="uni-intro">
+        <h1 class="intro-heading">Explore Your Path to Academic Excellence</h1>
+        <p><span class="co-2">"</span>Starting your higher education journey is a life-changing experience, and picking
+            the right path is key to reaching your potential.Whether you aspire to enroll in a prestigious government
+            university, explore the innovative offerings of private institutions, or pursue globally recognized foreign
+            degrees, the possibilities are endless. Education is no longer confined to traditional boundaries; it now
+            embraces flexibility, inclusivity, and global perspectives.<br><br>
+            <span class="co-2">"</span>Government universities in Sri Lanka stand as pillars of academic excellence,
+            offering affordable and comprehensive programs that cater to a wide range of disciplines. With a strong
+            focus on research and skill development, these institutions prepare students to meet the challenges of a
+            rapidly evolving world. For those seeking a modern and industry-aligned approach, private universities
+            provide cutting-edge facilities, diverse programs, and international affiliations that pave the way for
+            professional success.<br><br>
+            <span class="co-2">"</span>In an increasingly interconnected world, the attract of foreign university
+            degrees
+            has grown exponentially. These programs, whether pursued through local study centers or abroad, offer global
+            exposure, cultural enrichment, and access to international networks. Similarly, external degree programs
+            provide unparalleled flexibility, allowing students to balance their education with personal and
+            professional commitments, making quality education accessible to everyone.<br><br>
+            <span class="co-2">"</span>Beyond traditional universities, institutions and vocational training centers
+            play a crucial role in equipping students with specialized skills tailored to industry demands. From
+            technical certifications to professional courses, these institutions bridge the gap between education and
+            employability, empowering individuals to excel in their chosen fields.<br><br>
+            <span class="co-2">"</span>Scholarships further enhance accessibility, breaking down financial barriers and
+            enabling talented students to achieve their dreams. With opportunities available for government, private,
+            and foreign programs, scholarships recognize academic excellence, financial need, and unique talents,
+            ensuring that no aspiration is left unfulfilled.<br><br>
+            <span class="co-2">"</span>Our mission is to guide students in navigating this vast educational landscape,
+            providing them with the resources, information, and support they need to make informed decisions. Whether
+            you aim to study locally or internationally, pursue a traditional degree or a flexible program, we are here
+            to help you discover and achieve your academic goals. The future awaits—start your journey today and unlock
+            the endless possibilities of education.
+
+        </p>
+    </section>
+
     <!--image galary-->
     <section class="img-show">
-        <h2 class="img-topic">EduPathwayHub</h2>
+        <h2 class="img-topic">From EduPathwayHub to you</h2>
         <div class="img-galary">
             <img src="uni.img/convo7.jpg" alt="convocation">
             <img src="uni.img/convo6.jpg" alt="convocation">
@@ -154,8 +202,7 @@
         <div class="main_cont">
             <div class="main_col">
                 <h3>About</h3>
-                <p class="txt8">EduPathWayHub is your ultimate guide to higher education opportunities in Sri Lanka
-                    and
+                <p class="txt8">EduPathWayHub is your ultimate guide to higher education opportunities in Sri Lanka and
                     beyond. We
                     connect students with the right resources to shape their future.</p>
                 <hr>
@@ -170,29 +217,29 @@
             <div class="main_col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Universities</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Institutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Pro Insigts</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="uni.html">Universities</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="uni.html">Institutions</a></li>
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="pro.html">Pro Insigts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="main_col">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="#">Scholarships</a></li>
-                    <li><a href="#">Guidance</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="uni.html">Scholarships</a></li>
+                    <li><a href="pro.html">Guidance</a></li>
+                    <li><a href="resource.html">Books</a></li>
+                    <li><a href="contact.html">FAQs</a></li>
                 </ul>
             </div>
             <div class="main_col">
                 <h3>Newsletter</h3>
                 <p class="txt8">Subscribe to our newsletter for the latest updates on higher education and career
                     opportunities.</p>
-                <input type="email" id="e-mail" name="email">
+                <input type="text" id="e-mail" name="e-mail">
                 <button>Email</button>
                 <hr>
                 <h3>Social Media </h3>

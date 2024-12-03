@@ -2,21 +2,61 @@
     display: flex;
     background-color: white;
     padding: 5rem 5rem;
+    margin-top: 1.5rem;
 }
 .founder .block{
   gap: 3rem;
     display: flex;
 }
 .founder .founder-cont{
-    background-color: rgb(93, 94, 95);
+    background-color: rgb(194, 191, 191);
    width: 50%;
     padding: 3rem 2rem;
    
     line-height: 2rem;
 }
+.founder .founder-cont img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+
+}
+.founder .founder-cont h2{
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
 .founder .block .founder-cont #tx2{
     font-size: 0.9rem;
+}/*end*/
+/*Vission section*/
+ .cont2{
+    /**/margin-top: 2rem;
+    box-shadow: 10px 18px 18px 10px rgb(1, 77, 13);
+    background-color: white;
+    padding: 1rem 8rem;
+    align-items: center;
+    margin-left:10rem ;
+    margin-right:10rem ;
+    line-height: 1.5rem;
 }
+ .cont2 h1{
+    font-size: 3rem;
+    padding: 2rem;
+   
+}
+.cont2 p .co1{
+    font-size: 5rem;
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+.cont2 p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.7rem;
+    
+}
+
+
 /*IMAGE slider*/
 .main-hero {
     background-position: center;
@@ -91,3 +131,72 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }/*end*/
+
+/*Connect with us section*/
+.connect{
+    background-color: white;
+    padding: 2rem 6rem;
+    
+    
+}
+.connect h2{
+    font-size: 3rem;
+}
+.connect h5{
+    font-size: 2rem;
+}
+/*end*/
+/*Form style*/
+.all-form form h1{
+    font-size: 2.5rem;
+}
+
+input[type=text], select, textarea {
+    width: 55%;
+    padding: 0.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    resize: vertical;
+}
+label {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: #006d45;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+  } 
+  input[type=submit]:hover {
+    background-color: #019c09;
+  }
+  
+  
+  .col-left {
+    float: left;
+    width: 20%;
+    margin-top: 0.5rem;
+  }
+  
+  .col-right {
+    float: left;
+    width: 75%;
+    margin-top: 0.5rem;
+  }
+  .line::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .all-form{
+    background-color: aliceblue;
+    padding: 4rem 8rem;
+    margin-top: 2.5rem;
+    
+    
+  }
+  

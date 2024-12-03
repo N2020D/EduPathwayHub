@@ -19,6 +19,26 @@
     font-weight: bold;
 }
 /*end*/
+
+/*University intro content*/
+.uni-intro{
+    background-color: white;
+    padding: 5rem 5rem 1rem 5rem;
+}
+.uni-intro .intro-heading{
+    font-size: 3rem;
+}
+.uni-intro p .co2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(2, 2, 63);
+}
+.uni-intro p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+
 /*START IMAGE galary*/
 .img-show{
     padding: 2rem 3rem;
@@ -27,14 +47,16 @@
     scroll-behavior: smooth;
     position: relative;
 }
+
 .img-show .img-topic{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     padding: 1rem;
 }
 .img-show .img-galary{
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 34s linear infinite;
+    scroll-behavior: smooth;
     width: auto;
     gap: 5rem;
 }
@@ -91,7 +113,7 @@
 }
 
 .cont2 .block .cont:hover{
-    background-color: blue;
+    background-color: rgb(88, 87, 87);
     color: white;
     transform: perspective(100px) translateZ(-10px);
     

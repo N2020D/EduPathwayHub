@@ -18,7 +18,6 @@
     <link rel="stylesheet" a href="styles.css">
     <link rel="stylesheet" a href="cont.css">
 
-
 </head>
 
 <body>
@@ -36,19 +35,21 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <!--University tab dropdown-->
-                    <li class="dropdown"><a href="uni.html" class="dropbtn">Universities</a>
+                    <li class="dropdown">
+                        <a href="uni.html" class="dropbtn">Universities</a>
                         <div class="dropdown-content">
                             <a href="#">Government Universities</a>
                             <a href="#">Foreign Universities</a>
                             <a href="#">External Degree Programs</a>
                             <a href="#">Scholarships</a>
+                            <a href="#">Institutes</a>
                         </div>
                     </li><!--end-->
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Institutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Pro Insigts</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <!--<li><a href="institute.html">Institutions</a></li>-->
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="pro.html">Pro Insigts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <!--Call to action buttons - Login and Register buttons -->
@@ -163,15 +164,18 @@
         <div class="block">
             <div class="founder-cont">
                 <h2>Founder</h2>
-                <img src="home_img/profile1.png" alt="founder image" width="5rem" height="5rem">
+                <img src="home_img/profile1.png" alt="founder image">
                 <p>EDUPathwayHub was founded by W.B.M.Niluka Dasuni, who is a strong advocate for higher education,
                     especially for rural students. With a strong background in Information Technology, she aspires to
                     provide a platform that bridges the gap between students and a wide range of educational
                     opportunities
-                    available locally and globally, to students pursuing higher education.</p>
+                    available locally and globally, to students pursuing higher education.<br>As the founder of
+                    EduPathwayHub, I am committed to continually expanding and enhancing this platform to meet the
+                    evolving needs of students. Together, let’s make education more accessible, achievable, and
+                    impactful for everyone.</p>
 
-                    
-                    <p id="tx2"><b>Signature <br>01/12/2024 Niluka<br> Founder<br> EduPathwayHub</b></p>
+
+                <p id="tx2"><b>Signature <br>01/12/2024<br> Niluka<br> Founder<br> EduPathwayHub</b></p>
             </div>
             <div class="founder-cont">
                 <h2>Founder’s personal journey</h2>
@@ -179,11 +183,109 @@
                     students face in navigating the world of higher education. Her journey from identifying the right
                     institutions to accessing reliable resources was marked by perseverance and determination that laid
                     the
-                    foundation for EduPathwayHub.</p>
+                    foundation for EduPathwayHub.<br><br><b>To every student who visits EduPathwayHub, my message is
+                        simple:</b> education is the most powerful tool you have to shape your future. This platform was
+                    built with you in mind—to guide you, support you, and help you unlock your true potential. The
+                    journey may not always be easy, but remember, every step brings you closer to your dreams.</p>
             </div>
         </div>
     </section>
 
+    <!--Inside vission-->
+
+    <div class="cont2">
+        <h1>Vision Behind EduPathwayHub</h1>
+        <p><span class="co1">"</span>The idea for EduPathwayHub stemmed from a desire to empower Sri Lankan students
+            with the tools and
+            information they need to make informed decisions about their educational paths. By bringing together
+            resources such as government and foreign universities, scholarships, and career guidance into one
+            centralized platform, Founder aims to simplify the process and inspire students to dream bigger.
+        </p>
+    </div>
+
+
+    <!---->
+
+
+    <!--Form-->
+    <section class="all-form">
+        <form>
+            <h1>User Feedback</h1>
+            <div class="line">
+                <div class="col-left">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-right">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="line">
+                <div class="col-left">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-right">
+                    <input type="text" id="email" name="email" placeholder="Your email here..">
+                </div>
+            </div>
+            <div class="line">
+                <div class="col-left">
+                    <label for="province">Province</label>
+                </div>
+                <div class="col-right">
+                    <select id="province" name="discrit">
+                        <option value="pro1">Select</option>
+                        <option value="pro1">Central Province</option>
+                        <option value="pro1">Eastern Province</option>
+                        <option value="pro1">Northern Province</option>
+                        <option value="pro1">Southern Province</option>
+                        <option value="pro1">Western Province</option>
+                        <option value="pro1">North Western province</option>
+                        <option value="pro1">South Central Province</option>
+                        <option value="pro1">Uwa Province</option>
+                        <option value="pro1">Sabaragamuwa Province</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line">
+                <div class="col-left">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-right">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:2rem"></textarea>
+                </div>
+            </div>
+            <div class="line">
+                <div class="col-left">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-right">
+                    <textarea id="message" name="message" placeholder="Write your message"
+                        style="height:5rem"></textarea>
+                </div>
+                <br>
+                <div class="line">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <div class="connect">
+        <i class="fa fa-question-circle" style="font-size:8rem;color:red"></i>
+        <h2>Get in Touch With Us!</h2>
+        <h5>Have questions about your educational journey? Reach out to us for personalized guidance or additional
+            support!</h5>
+        <i class="material-icons" style="font-size:2rem;">call</i>
+        <p style="font-size: 1.3rem;">074-2272974</p>
+        <i class="material-icons" style="font-size:2rem;">location_on</i>
+        <p style="font-size: 1.3rem;">Colombo,Sri Lanka.</p>
+        <i class="material-icons" style="font-size:2rem;">mail</i>
+        <p style="font-size: 1.3rem;">dasuniniluka50@gmail.com</p>
+
+    </div>
 
 
     <!--FOOTER SECTION-->
@@ -213,22 +315,22 @@
             <div class="main_col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Universities</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Institutions</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Pro Insigts</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="uni.html">Universities</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="uni.html">Institutions</a></li>
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="pro.html">Pro Insigts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="main_col">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="#">Scholarships</a></li>
-                    <li><a href="#">Guidance</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="uni.html">Scholarships</a></li>
+                    <li><a href="pro.html">Guidance</a></li>
+                    <li><a href="resource.html">Books</a></li>
+                    <li><a href="contact.html">FAQs</a></li>
                 </ul>
             </div>
             <div class="main_col">

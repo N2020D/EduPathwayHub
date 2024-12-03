@@ -29,28 +29,35 @@ header .head_section .logo {
     display: flex;
     align-items: center;
 }
-/*header .head_section*/ .logo h1{
+
+/*header .head_section*/
+.logo h1 {
     color: white;
     font-size: 1.8rem;
 }
-/*header .head_section .logo*/ img {
+
+/*header .head_section .logo*/
+img {
     width: 6.5rem;
     height: 6.5rem;
 }
 
-/*header .head_section .logo*/ .t1 {
+/*header .head_section .logo*/
+.t1 {
     color: rgb(0, 255, 255);
     font-weight: bolder;
     font-size: 2.2rem;
 }
 
-/*header .head_section .logo*/ .t2 {
+/*header .head_section .logo*/
+.t2 {
     color: cyan;
     font-weight: bolder;
     font-size: 2.2rem;
 }
 
-/*header .head_section .logo*/ .t3 {
+/*header .head_section .logo*/
+.t3 {
     color: cyan;
     font-weight: bolder;
     font-size: 2.2rem;
@@ -60,47 +67,101 @@ header .head_section .logo {
 /*navigation bar*/
 header .head_section nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     list-style: none;
+   
 }
 
-header .head_section nav ul li a {
+header li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0.3rem ;
+    text-decoration: none;
+}
+
+header li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(94, 82, 102);
+
+}
+
+header li.dropdown {
+    display: inline-block;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e3e4f8;
+    min-width: 20rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgb(172, 169, 169);
+    z-index: 1;
+}
+
+header .dropdown-content a {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+header .dropdown-content a:hover {
+    background-color: #cbcde9;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*header .head_section nav ul li a,. {
     text-decoration: none;
     color: whitesmoke;
 }
-/*header .head_section nav ul li a:hover{
-    color: orangered;
-}*/
-/*DROPDOWN START*/
+header .head_section nav ul li a:hover{
+    /*color: orangered;
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    color: black;
+}
+/*DROPDOWN START
 header .head_section nav ul li a:hover .dropdown:hover .dropbtn{
-    background-color: black;
+    background-color: white;
     padding: 0.5rem 0.5rem;
     
+    
 }
-header .head_section nav ul li.dropdown {
+header .head_section nav ul li .dropdown {
     display: inline-block;
+    
   }
  
-.dropdown-content {
+  header .head_section nav ul li .dropdown .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: rgb(119, 119, 177);
-    /*min-width: 160px;*/
+   
+  
+    background-color: aliceblue;
+    /*min-width: 160px;
     box-shadow: 0px 2px 2px 0px rgb(248, 248, 248);
-   /* z-index: 1;*/
+   /* z-index: 1;
 }
   
 .dropdown-content a {
-   
+    color: black;
     padding: 0.7rem 0.4rem;
-    text-decoration: none;
+   
     display: block;
     text-align: left;
     font-size: 1rem;
 }
   
 .dropdown-content a:hover {
-    background-color: rgb(37, 37, 179);
+    background-color: rgb(168, 168, 199);
+    
 }
   
   .dropdown:hover .dropdown-content {
@@ -114,15 +175,16 @@ header .head_section .buttons a {
     text-decoration: none;
     border-width: 0.312rem;
 }
+
 header .head_section .buttons .login_btn {
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
     color: white;
     font-weight: bolder;
     display: inline-block;
-  
-    
-    
-    
+
+
+
+
 }
 
 header .head_section .buttons .reg_btn {
@@ -130,19 +192,19 @@ header .head_section .buttons .reg_btn {
     color: white;
     font-weight: bolder;
     display: inline-block;
-    
-    
+
+
 
 }
 
 header .head_section .buttons .reg_btn:hover {
     background-color: rgb(97, 12, 1);
-   
+
 }
 
 header .head_section .buttons .login_btn:hover {
     background-color: rgb(1, 1, 92);
-    
+
 }
 
 /*end*/
@@ -186,8 +248,7 @@ header .head_section .buttons .login_btn:hover {
 }
 
 .hero .explore-btn:hover {
-    background-color: rgb(204, 59, 2);
-    color: black;
+    background-color: rgb(255, 1, 1);
 }
 
 /*end*/
@@ -196,8 +257,8 @@ header .head_section .buttons .login_btn:hover {
 .search_bar {
     text-align: center;
     padding: 1rem;
-   
- 
+
+
 }
 
 
@@ -244,6 +305,10 @@ header .head_section .buttons .login_btn:hover {
     color: white;
     margin-left: 2.5rem;
 }
+.body_cont1 .text_cont .learn_btn:hover{
+    background-color: rgb(51, 61, 204)
+    
+}
 
 .body_cont1 .video_cont {
     padding: 4rem 3rem;
@@ -255,33 +320,38 @@ header .head_section .buttons .login_btn:hover {
 
 /*END*/
 /*START statement show */
-.statement{
+.statement {
     background-color: white;
     padding: 3rem;
     line-height: 2rem;
     display: inline-block;
 }
-.statement .cont{
+
+.statement .cont {
     display: flex;
     background-color: rgb(230, 226, 226);
     gap: 4rem;
     padding: 2rem;
 }
-.statement .cont .item{
+
+.statement .cont .item {
     background-color: rgb(218, 214, 214);
     padding: 2rem;
 }
-.statement .cont .item h2{
+
+.statement .cont .item h2 {
     text-align: center;
 }
+
 /*END*/
 /*START members show paert*/
-.members{
+.members {
     background-color: white;
     padding: 3rem;
-    
+
 }
-.members .cont-member{
+
+.members .cont-member {
     display: flex;
     background-color: rgb(230, 226, 226);
     gap: 2rem;
@@ -289,12 +359,15 @@ header .head_section .buttons .login_btn:hover {
     line-height: 1rem;
     justify-content: space-between;
 }
-.members .cont-member h3{
+
+.members .cont-member h3 {
     font-size: 3rem;
 }
-.members .cont-member p{
+
+.members .cont-member p {
     font-size: 1.3rem;
 }
+
 /*END*/
 
 /*MAIN BODY CONTENT 2nd SECTION-explore educational paths with gid layout*/
@@ -313,7 +386,7 @@ header .head_section .buttons .login_btn:hover {
 .body_cont2 .box_cont {
     display: flex;
     gap: 2rem;
-    
+
 }
 
 .body_cont2 .box_cont .cont1 {
@@ -321,13 +394,17 @@ header .head_section .buttons .login_btn:hover {
     padding: 1.5rem 1rem;
     background-color: rgb(230, 226, 226);
     line-height: 1.56rem;
-    
+
 }
-.body_cont2 .box_cont .cont1:hover{
-    background-color: rgb(13, 13, 58);
+
+.body_cont2 .box_cont .cont1:hover {
+    /*background-color: rgb(94, 94, 179);*/
+    /*background-image: linear-gradient(to bottom right, rgb(28, 31, 78), rgb(32, 17, 247));*/
     color: white;
+    background-image: linear-gradient(to bottom right, purple, rgb(29, 28, 28));
+    font-weight: bold;
     transform: perspective(200px) translateZ(10px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .body_cont2 .box_cont .cont1 h4 {
@@ -341,11 +418,12 @@ header .head_section .buttons .login_btn:hover {
     background-color: rgb(1, 1, 85);
     color: white;
     font-size: 0.8rem;
-    
-   
+
+
 }
-.body_cont2 .box_cont .cont1 .learn_btn2:hover{
-    background-color: black;
+
+.body_cont2 .box_cont .cont1 .learn_btn2:hover {
+    background-image: linear-gradient(to bottom right, rgb(28, 31, 78), rgb(32, 17, 247));
 }
 
 /*END*/
@@ -367,6 +445,7 @@ header .head_section .buttons .login_btn:hover {
     display: flex;
     animation: scroll 30s linear infinite;
     width: auto;
+    scroll-behavior: smooth;
 }
 
 .body_cont3 .image_cont img {
@@ -421,16 +500,18 @@ header .head_section .buttons .login_btn:hover {
 
 /*END*/
 /*footer*/
-footer{
+footer {
     padding: 3rem 2rem;
 }
-footer .logo{
+
+footer .logo {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
+
 footer .main_cont {
-    
+
     color: whitesmoke;
     display: inline-block;
     display: flex;
@@ -443,39 +524,47 @@ footer .main_cont {
 footer .main_cont .main_col .txt8 {
     font-size: 0.9rem;
 }
-footer .main_cont .main_col h3{
+
+footer .main_cont .main_col h3 {
     color: darkturquoise;
 }
-footer .main_cont .main_col ul  {
+
+footer .main_cont .main_col ul {
     list-style-type: none;
     text-decoration: none;
-    
+
 }
-footer .main_cont .main_col ul li{
-   margin-left: -1.4rem;
-   font-size: 0.9rem;
+
+footer .main_cont .main_col ul li {
+    margin-left: -1.4rem;
+    font-size: 0.9rem;
 }
 
 footer .main_cont .main_col ul li a {
     text-decoration: none;
     color: white;
 }
-footer .main_cont .main_col ul li a:hover{
+
+footer .main_cont .main_col ul li a:hover {
     color: orange;
 }
-footer .last-cont{
+
+footer .last-cont {
     color: white;
     text-align: center;
     font-size: 0.86rem;
 }
-footer .last-cont a{
+
+footer .last-cont a {
     color: white;
-    
+
 }
-footer .main_col #e-mail{
+
+footer .main_col #e-mail {
     padding: 0.5rem;
 }
-footer .main_col button{
+
+footer .main_col button {
     padding: 0.5rem;
     background-color: blue;
 }
