@@ -1,0 +1,81 @@
+/*Foreign university section*/
+.foreign-head{
+    background-color: white;
+    padding: 3rem 5rem;
+}
+.foreign-head h1{
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+.foreign-head p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 4rem;
+}
+/*end*/
+/*foreign university main*/
+.country{
+    background-image: linear-gradient(to top left, black,white);
+    border-style: groove;
+    border-width: 2rem;
+    padding: 4rem 6rem;
+   
+}
+.country h1{
+    font-size: 2.8rem;
+}
+.country .country-h{
+    background-color: aliceblue;
+    line-height: 1.5rem;
+    padding: 4rem;
+}
+.country img{
+    height: auto;
+    width: 5rem;
+}
+
+
+
+
+    /*end*/
+/*foreign university content one by one*/
+/*Details for government universities*/
+.country .m1-cont{
+    background-color: white;
+    padding: 2rem 3rem;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.country .m1-cont:hover{
+    transform: perspective(500px) translateZ(10px);
+   
+}
+.country .m1-cont .global1 {
+    color: rgb(77, 43, 0);
+    font-size: 0.98rem;
+}
+.country .m1-cont{
+    border: 1px solid green;
+    background-color: aliceblue;
+    padding: 2rem 2rem;
+    margin: 3rem 8rem 3rem 8rem;
+    box-shadow: 0px 8px 8px 0px rgb(20, 85, 0);
+}
+.country .m1-cont a:hover{
+    color: red;
+    
+}
+.country .m1-cont .star {
+    float: right;
+   
+    /*margin-bottom: 2rem;*/
+}
+.country .m1-cont .star .checked{
+    color: orange;
+}
+/*end*/
+
