@@ -1,0 +1,68 @@
+.scholar_hero {
+    background: url("scholar_img/scho1.jpg") no-repeat no-repeat center center/cover;
+    padding: 5rem 8rem;
+    width: auto;
+    height: 25rem;
+}
+
+.scholar_hero h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: white 4px 7px 9px rgb(1, 1, 94);
+    color: white;
+    background-color: rgb(250, 181, 221);
+
+    font-weight: bolder;
+    padding: 2rem;
+}
+
+.scholar_hero h4 {
+    font-size: 3rem;
+    text-align: center;
+    mix-blend-mode: multiply;
+    background-color: rgb(217, 246, 253);
+    text-shadow: 4px 7px 9px rgb(1, 1, 94);
+}
+
+.scho-main {
+    background-color: white;
+    padding: 3rem 8rem;
+}
+
+.scho-main .cont {
+    background-color: aliceblue;
+    padding: 2rem 2rem;
+
+    box-shadow: 4px 7px 9px rgb(1, 1, 94);
+}
+
+.scho-main .cont:hover {
+    transform: perspective(500px) translateZ(10px);
+}
+
+.scho-main .cont h1 {
+    font-size: 2rem;
+}
+
+.scho-main .cont a {
+    text-decoration: none;
+}
+
+.scho-main .cont a:hover {
+    color: red;
+}
+
+/*Javascrip - toggle like designe************************************/
+.scho-main .cont .fa {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    float: right;
+    color: green;
+    float: right;
+ 
+}
+
+.scho-main .cont .fa:hover {
+    color: orange;
+}

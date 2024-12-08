@@ -1,0 +1,54 @@
+.hero5{
+   background: url("resource_img/res1.png") no-repeat center center/cover;
+   padding: 5rem 5rem;
+   width: auto;
+   height: 20rem;
+}
+.hero5 h1{
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 4px 7px 9px rgb(1, 1, 94);
+    color: white;
+    background-color: rgb(250, 217, 29);
+    mix-blend-mode: luminosity;
+    font-weight: bolder;
+    padding: 2rem;
+}
+.main-cont-resource{
+    padding: 3rem 4rem;
+    background-color: white;
+}
+.main-cont-resource .book{
+    background-color: rgb(228, 216, 216);
+    padding: 3rem 6rem;
+}
+.main-cont-resource .book .book1{
+    width: 75%;
+    height: auto;
+    padding: 1rem 1rem;
+    background-color: rgb(201, 226, 248); 
+    box-shadow: 0px 8px 8px 0px rgb(0, 11, 73);
+}
+.main-cont-resource .book .book1:hover{
+    transform: perspective(380px) translateZ(10px);
+
+}
+.main-cont-resource .book .book1 .cont a{
+    text-decoration: none;
+}
+.main-cont-resource .book .book1 .cont a:hover{
+    color: rgb(175, 0, 0);
+}
+.main-cont-resource .book h2{
+    font-size: 2.5rem;
+}
+.main-cont-resource .book h4{
+    font-size: 2rem;
+}
+.main-cont-resource .book .book1 .cont .fa{
+    float :right;
+    margin-right: 1rem;
+}
+
+
+

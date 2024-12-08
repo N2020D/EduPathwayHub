@@ -8,8 +8,10 @@
     font-weight: bolder;
     text-align: center;
     color: white;
-    background-color: rgb(255, 0, 170);
-    mix-blend-mode: multiply;
+    background-color: rgb(255, 50, 187);
+    /*mix-blend-mode: multiply;*/
+    /*mix-blend-mode: luminosity;*/
+    mix-blend-mode: hard-light;
 }
 .banner p{
     font-size: 2rem;

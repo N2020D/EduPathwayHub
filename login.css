@@ -1,8 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: radial-gradient(circle ,rgb(3, 180, 127) ,black);
-    background-image: radial-gradient(circle ,rgb(3, 180, 127) ,black);
+    background-image: radial-gradient(circle ,blue ,black);
+    justify-content: center;
+    align-items: center;
+   
 }
+
 h2{
     font-size: 3rem;
 }
@@ -12,4 +15,37 @@ form{
     width: 20rem;
     height: 30rem;
 }
+.login-all{
+    display: flex;
+    padding: 3rem; 
+    margin: auto; 
+   
+}
+.login-form{
+    line-height: 3rem;
+}
+.login-all .login-form button{
+    padding: 0.5rem;
+    width: 5.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 1.5rem;
+    background-color: rgb(1, 1, 75);
+}
+.login-all .login-form button:hover{
+    background-color: blue;
+}
+.login-all .login-form #e-mail,#password{
+    font-size: 1rem;
+    padding: 0.57rem;
+}
+.login-all .login-form p{
+    font-size: 0.9rem;
+}
+.login-all .im {
+    
+    opacity: 0.7;
+}
+
 

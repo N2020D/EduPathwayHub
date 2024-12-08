@@ -1,0 +1,44 @@
+.hero-section2{
+    padding: 8rem 5rem;
+    width: auto;
+    height: 26rem;
+    background: url("course_img/cou3.jpg") no-repeat center center/cover;
+}
+.hero-section2 h2{
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: 4px 7px 9px rgb(1, 1, 94);
+    color: white;
+    background-color: rgb(2, 109, 20);
+    mix-blend-mode: multiply;
+    font-weight: bolder;
+    padding: 5rem;
+}
+/*Start main content*/
+.main-cont7{
+    padding: 5rem;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.main-cont7  .cont{
+    background-color: aliceblue;
+    padding: 1rem 8rem;
+   
+    
+}
+.main-cont7 h1{
+    font-size: 3rem;
+    padding: 2rem;
+}
+.main-cont7 .cont h3{
+    font-size: 1.7rem;
+}
+.main-cont7  .cont a{
+    text-decoration: none;
+}
+.main-cont7  .cont a:hover{
+    color: rgb(146, 5, 5);
+    
+}
+
