@@ -1,5 +1,5 @@
-                                                                  EduPathwayHub
-                            The Static website for Sri Lankan students to find ways to pursue higher education 
+                                                EduPathwayHub
+                  The Static website for Sri Lankan students to find ways to pursue higher education 
 Abstract
 
 EduPathwayHub was developed to address the significant challenges faced by Sri Lankan students, particularly those in rural areas, in accessing reliable and centralized information about higher education opportunities. The platform consolidated comprehensive data on government and private universities, foreign degree programs, vocational training institutes, scholarships, and online learning resources. By presenting this information in a categorized and easily navigable format, the website simplified the decision-making process for students. Designed with HTML, CSS, and JavaScript, EduPathwayHub prioritized user-friendliness and accessibility to ensure a seamless browsing experience. This project aimed to bridge the information gap in Sri Lanka's education sector, empowering students to make informed choices about their academic and career paths. Ultimately, the website contributed to promoting equitable access to educational resources, supporting students in realizing their aspirations.
