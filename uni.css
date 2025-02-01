@@ -16,8 +16,8 @@
 .banner p{
     font-size: 2rem;
     text-align: center;
-    text-shadow: 2px 2px 4px rgb(122, 0, 133);
-    color: rgb(41, 8, 73);
+    text-shadow: 2px 2px 4px rgb(226, 2, 247);
+    color: white;
     font-weight: bold;
 }
 /*end*/
@@ -115,9 +115,11 @@
 }
 
 .cont2 .block .cont:hover{
-    background-color: rgb(88, 87, 87);
+   background-color: rgb(110, 110, 110);
     color: white;
-    transform: perspective(100px) translateZ(-10px);
+    /*transform: perspective(100px) translateZ(-10px);*/
+    scale: 0.95;
+    
     
 }
 .cont2 .block .cont .btn-1:hover{

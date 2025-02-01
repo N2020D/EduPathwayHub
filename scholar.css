@@ -37,7 +37,8 @@
 }
 
 .scho-main .cont:hover {
-    transform: perspective(500px) translateZ(10px);
+    /*transform: perspective(500px) translateZ(10px);*/
+    scale: 1.04;
 }
 
 .scho-main .cont h1 {
@@ -58,11 +59,14 @@
     cursor: pointer;
     user-select: none;
     float: right;
-    color: green;
+    color: orange;
     float: right;
  
 }
 
 .scho-main .cont .fa:hover {
-    color: orange;
+    color: greenyellow;
+}
+.scho-main .cont .fa:after{
+    color: red;
 }

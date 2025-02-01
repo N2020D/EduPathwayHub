@@ -33,7 +33,7 @@ header .head_section .logo {
 /*header .head_section*/
 .logo h1 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 /*header .head_section .logo*/
@@ -44,23 +44,23 @@ img {
 
 /*header .head_section .logo*/
 .t1 {
-    color: rgb(0, 255, 255);
+    color: cyan;
     font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 
 /*header .head_section .logo*/
 .t2 {
     color: cyan;
     font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 
 /*header .head_section .logo*/
 .t3 {
     color: cyan;
     font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 
 /*end*/
@@ -79,39 +79,42 @@ header li a,
     text-align: center;
     padding: 0.5rem 0.3rem ;
     text-decoration: none;
+    
 }
 
 header li a:hover,
 .dropdown:hover .dropbtn {
     background-color: rgb(94, 82, 102);
+    
 
 }
 
 header li.dropdown {
     display: inline-block;
+    
 }
 
 header .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e3e4f8;
-    min-width: 20rem;
-    box-shadow: 0rem 0.5rem 1rem 0rem rgb(172, 169, 169);
-    z-index: 1;
+    background-color: white;
+    min-width: 18rem;
+    /*box-shadow: 0.2rem 0.5rem 1.3rem 0rem rgb(255, 255, 255);*/
+    /*z-index: 1;*/
 }
 
 header .dropdown-content a {
     color: black;
     font-size: 0.8rem;
-    font-weight: bold;
     padding: 1rem 1rem;
     text-decoration: none;
     display: block;
     text-align: left;
+    
 }
 
 header .dropdown-content a:hover {
-    background-color: #cbcde9;
+    background-color: #f1eff1;
 }
 
 header .dropdown:hover .dropdown-content {
@@ -127,34 +130,34 @@ header .head_section .buttons a {
 }
 
 header .head_section .buttons .login_btn {
-    background-color: rgb(0, 0, 255);
+    background-color: blue;
     color: white;
     font-weight: bolder;
     display: inline-block;
-
-
+   /* border-radius: 3.4rem;*/
+    
 
 
 }
 
 header .head_section .buttons .reg_btn {
-    background-color: rgb(189, 2, 2);
+    background-color: rgb(228, 0, 0);
     color: white;
     font-weight: bolder;
     display: inline-block;
-
-
+    /*border-radius: 3.4rem;*/
+    
 
 }
 
 header .head_section .buttons .reg_btn:hover {
-    background-color: rgb(97, 12, 1);
-
+    color: rgb(133, 15, 0);
+    background-color: white;
 }
 
 header .head_section .buttons .login_btn:hover {
-    background-color: rgb(1, 1, 92);
-
+    color: rgb(0, 0, 179);
+    background-color: white;
 }
 
 /*end*/
@@ -174,13 +177,14 @@ header .head_section .buttons .login_btn:hover {
     font-size: 3.9rem;
     color: yellow;
     font-weight: bolder;
-    text-shadow: 2px 2px 4px rgb(252, 5, 5);
+    
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
 }
 
 .hero p {
     color: white;
     font-size: 1.7rem;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 1px 3px rgb(82, 252, 39);
 }
 
 /*hero section button*/
@@ -188,17 +192,18 @@ header .head_section .buttons .login_btn:hover {
     font-style: italic;
     color: white;
     font-size: 1.4rem;
+    text-shadow: 2px 1px 3px rgb(252, 39, 188);
 }
 
 .hero .explore-btn {
-    background-color: rgb(116, 5, 5);
+    background-color: rgb(180, 1, 1);
     text-decoration: none;
     padding: 0.625rem 1.25rem;
     color: white;
 }
 
 .hero .explore-btn:hover {
-    background-color: rgb(255, 1, 1);
+    background-color: rgb(99, 0, 0);
 }
 
 /*end*/
@@ -228,8 +233,8 @@ header .head_section .buttons .login_btn:hover {
 }
 
 .search_bar button:hover {
-    background-color: rgb(87, 86, 86);
-    color: black;
+    background-color: rgb(68, 67, 67);
+    color: rgb(255, 255, 255);
 }
 
 /*end*/
@@ -351,9 +356,10 @@ header .head_section .buttons .login_btn:hover {
     /*background-color: rgb(94, 94, 179);*/
     /*background-image: linear-gradient(to bottom right, rgb(28, 31, 78), rgb(32, 17, 247));*/
     color: black;
-    background-image: linear-gradient(to bottom right, white, rgb(3, 25, 148));
+    background-image: linear-gradient(to bottom right, rgb(255, 147, 147), rgb(126, 145, 255));
     font-weight: bold;
-    transform: perspective(200px) translateZ(10px);
+   /* transform: perspective(200px) translateZ(10px);*/
+   scale: 1.1;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -497,6 +503,7 @@ footer .main_cont .main_col ul li a {
 
 footer .main_cont .main_col ul li a:hover {
     color: orange;
+    
 }
 
 footer .last-cont {

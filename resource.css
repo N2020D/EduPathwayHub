@@ -5,14 +5,14 @@
    height: 20rem;
 }
 .hero5 h1{
-    font-size: 4rem;
-    text-align: center;
-    text-shadow: 4px 7px 9px rgb(1, 1, 94);
+    font-size: 3rem;
+    text-align: left;
+    text-shadow: 4px 7px 9px rgb(0, 0, 255);
     color: white;
-    background-color: rgb(250, 217, 29);
-    mix-blend-mode: luminosity;
+    /*background-color: rgb(250, 217, 29);*/
+    
     font-weight: bolder;
-    padding: 2rem;
+    padding: 1rem;
 }
 .main-cont-resource{
     padding: 3rem 4rem;
@@ -30,7 +30,8 @@
     box-shadow: 0px 8px 8px 0px rgb(0, 11, 73);
 }
 .main-cont-resource .book .book1:hover{
-    transform: perspective(380px) translateZ(10px);
+    /*transform: perspective(380px) translateZ(10px);*/
+    scale: 1.06;
 
 }
 .main-cont-resource .book .book1 .cont a{

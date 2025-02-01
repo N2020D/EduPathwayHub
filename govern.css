@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 .Breadscrumb .breadscrumb-nav li a:hover{
-    color: rgb(131, 5, 5);
+    color: rgb(177, 0, 0);
 }
 
 
@@ -54,7 +54,8 @@
     display: inline-block;
 }
 .gov-m-cont .m-cont:hover{
-    transform: perspective(500px) translateZ(10px);
+   /* transform: perspective(500px) translateZ(10px);*/
+    scale: 1.06;
    
 }
 .gov-m-cont .m-cont .global {

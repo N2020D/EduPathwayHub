@@ -10,7 +10,7 @@ h2{
     font-size: 3rem;
 }
 form{
-    background-color: beige;
+    background-color: rgb(247, 247, 234);
     padding: 3rem;
     width: 20rem;
     height: 30rem;
@@ -24,14 +24,16 @@ form{
 .login-form{
     line-height: 3rem;
 }
-.login-all .login-form button{
+.login-all .login-form .login-btn1{
     padding: 0.5rem;
     width: 5.5rem;
     height: 2.5rem;
     font-size: 1rem;
     color: whitesmoke;
-    margin-top: 1.5rem;
+    text-decoration: none;
     background-color: rgb(1, 1, 75);
+    text-align: center;
+    
 }
 .login-all .login-form button:hover{
     background-color: blue;
