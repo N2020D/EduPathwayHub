@@ -1,7 +1,9 @@
                                                 EduPathwayHub
                   The Static website for Sri Lankan students to find ways to pursue higher education 
 
-website link - 
+website link - https://n2020d.github.io/EduPathwayHub/
+
+
 
 
 Abstract
