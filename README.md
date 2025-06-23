@@ -3,7 +3,15 @@
 
 website link - https://n2020d.github.io/EduPathwayHub/
 
+![web1](https://github.com/user-attachments/assets/00040083-cfae-42db-a798-e92fbd343f42)
+
 ![image](https://github.com/user-attachments/assets/ee9a1ae3-07e0-4bf7-b491-e52541aafb3a)
+
+![web2](https://github.com/user-attachments/assets/a0d4654a-bd53-4f7b-8684-8fceca37a23b)
+
+![web3](https://github.com/user-attachments/assets/47e00bc5-ff3b-44d4-bac6-67e8b13cc6e2)
+
+
 
 
 
